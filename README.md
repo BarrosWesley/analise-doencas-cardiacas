@@ -11,6 +11,31 @@ O projeto segue um fluxo de trabalho típico de aprendizado de máquina, incluin
 3.  **Treinamento e Avaliação de Modelos:** Treinamento de vários modelos de classificação (Regressão Logística, KNN, SVM, Naive Bayes, Árvore de Decisão, Floresta Aleatória e Rede Neural) e avaliação de seu desempenho.
 4.  **Classificador de Votação (Ensemble):** Implementação de um classificador de votação para combinar as previsões dos modelos individuais.
 
+
+## Sobre o Dataset
+
+Este dataset do mundo real foi encontrado no Kaggle e contém dados de 303 pacientes de: (1) The Hungarian Institute of Cardiology, (2) University Hospital, Zurich, (3) University Hospital, Basel, (4) V.A. Medical Center, Long Beach, e (5) The Cleveland Clinic Foundation. Doado à comunidade científica em 1988, tem sido citado em diversas publicações acadêmicas e utilizado como um ambiente de testes para novas ideias em aprendizado de máquina.
+
+O dataset consiste em 14 atributos. Alguns são contínuos, como idade e nível de colesterol, enquanto outros são categóricos, como sexo e tipo de dor no peito. A tarefa principal é usar os 13 primeiros atributos para prever o 14º - a presença de doença cardíaca em um paciente. Dada a pequena dimensão do conjunto de treinamento, com mais graus de liberdade em alguns modelos do que pontos de dados, é crucial ter cautela para evitar overfitting.
+
+Neste projeto, exploramos vários modelos de Machine Learning para esta tarefa. Nossas principais ferramentas são as bibliotecas Python scikit-learn e, embora não utilizada diretamente devido a problemas de compatibilidade, o projeto foi inicialmente concebido considerando o TensorFlow. Os resultados mostram uma consistência notável entre os modelos, com a maioria alcançando uma acurácia em torno de 0.885, sugerindo um Erro de Bayes provavelmente entre 8-10%.
+
+O dataset contém os seguintes atributos:
+* `idade`
+* `sexo`
+* `tipo_dor_peito`
+* `pressao_arterial_repouso`
+* `colesterol`
+* `acucar_jejum`
+* `eletrocardiograma_repouso`
+* `frequencia_cardiaca_maxima`
+* `angina_induzida_exercicio`
+* `depressao_st`
+* `inclinacao_st`
+* `numero_principais_vasos`
+* `talassemia`
+* `alvo` (variável a ser prevista: presença ou ausência de doença cardíaca)
+
 ## Tecnologias Utilizadas
 
 * **Python:** Linguagem de programação principal.
