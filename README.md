@@ -133,8 +133,8 @@ Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou corre
 
 ## Autor
 
-[Seu Nome]
+Wesley Barros
 
 ## Licença
 
-[Escolha uma Licença, por exemplo, MIT License]
+MIT License
